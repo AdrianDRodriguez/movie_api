@@ -2,6 +2,8 @@ class ActorController < ApplicationController
   def index
     @actors = Actor.all
     render template: "actors/index"
+    render :index
+    # render json: { message: " hello" }
   end
 
   def show
@@ -16,6 +18,7 @@ class ActorController < ApplicationController
     known_for: "Spider-Man"
     )
     @actor.save
-    render :show
+    # render :show
+    render template: "actors/show"
   end
 end

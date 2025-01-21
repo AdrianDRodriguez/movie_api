@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  get "/actor" => "actor#index"
-  get "/actor/:id" => "actor#show"
-  post "/actor" => "actor#create"
+  get "/actors" => "actor#index"
+  get "/actors/:id" => "actor#show"
+  post "/actors" => "actor#create"
 end
