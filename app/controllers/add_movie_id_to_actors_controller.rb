@@ -1,0 +1,2 @@
+class AddMovieIdToActorsController < ApplicationController
+end
